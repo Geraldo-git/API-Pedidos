@@ -7,6 +7,7 @@ const AppDataSource = new DataSource({
     username: 'postgres',
     password: '1234567',
     database: 'apivendas',
+    migrations: ['./src/shared/typeorm/migrations/*.ts'],
 });
 
 AppDataSource.initialize()
